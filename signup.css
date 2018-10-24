@@ -1,0 +1,65 @@
+
+
+.middle-box {
+	display: flex;
+  	justify-content: center;
+  	width: 600px;
+  	height: 500px;
+	padding: 25px;
+    margin: 25px;    
+  	background: grey; 
+}
+.sign-up-container {
+	 width: 600px;
+	 position: relative;
+ 	justify-content: center;   
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo i{
+    font-size: 2.0em;
+    color: #1da1f2;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo button{
+    border: 2px solid white;
+    background-color: #1da1f2;
+    color: white;
+    border-radius: 30px;
+    padding: 5px;
+    width: 70px;
+    font-size: 14px;
+    font-weight:bolder;
+}
+
+.sign-up-container h2{
+    font-size: 1.8em;
+    font-weight: bolder;
+    word-spacing: 2px;
+}
+.sign-up-container h5 {
+	font-size: 1.1em;
+	color: #1da1f2;
+	word-spacing: 3px;
+}
+
+input {	 
+	width: 100%;
+	display: block;
+	border: 0;
+  	outline: 0;
+  	background: transparent;
+  	padding: 10px 0;
+  	border-bottom: solid 1px black;
+}
+	 
+::placeholder {
+	 color: white;
+	 font-size: 20px;
+	}
