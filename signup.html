@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html>
-
-
 <head>
 	<title>Twitter clone</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="signup.css">
 </head>
 
 <body>
-	<p><img src="images/icon.png"> <button>Next</button></p>
-	<p>Create your account</p>
-
-	<p><input type="number" id="name"></p>
-
-	<p><input type="number" id="phone"></p>
-
-	<p>Use email instead</p>
-
-
+    <nav>
+        <ul>
+            <li><i class="fab fa-twitter nav-logo"></i></li>
+            <li>
+                <div class="search-box-wrapper">
+                    <i class="fa fa-search"></i>
+                    <input type="text" class="t-search" placeholder="Search twitter">
+                </div>
+            </li>
+            <li><button class="log-in">Log in</button></li>
+            <li><button class="sign-up">Sign up</button></li>
+            <li><i class="fa fa-ellipsis-v"></i></li>
+        </ul>
+    </nav>
+    
+    <div class="overlay"></div>
+        <div class="middle-box">       
+            <div class="logo">
+                <i class="fab fa-twitter"></i>
+                <button>Next</button>
+            </div>
+            <h2>Create your account</h2>
+            <div class="name"><input type="text" placeholder="Name" ></div> 
+            <div class="phone"><input type="text" placeholder="Phone"></div>
+            <p>Use email instead</p>    
+        </div>
 </body>
-
-
 </html>
