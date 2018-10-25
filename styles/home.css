@@ -1,0 +1,147 @@
+:root {
+	--blue-color: #1da1f2;
+    --grey-color:#e6ecf0;
+}
+
+body{
+    background-color: #e6ecf0;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    background-color:#e6ecf0; 
+}
+
+#profile-trend{
+    width: 25%;
+    border: 2px solid red;
+    background-color: var(--grey-color);
+    overflow: hidden;
+}
+
+.profile-info{
+    border: 2px solid yellow;
+    background-color: #1da1f2;
+    padding-top: 70px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+#profile-photo{
+    border: 2px solid white;
+    border-radius: 50px;
+    width: 90px;
+}
+
+.profile-name{
+    background-color: white;
+    margin-left: -10px;
+    margin-top: -50px;
+    padding-top: 50px
+}
+
+#display-name{
+    display: block;
+    color: black;
+    font-size: 1.5em;
+    margin-left: 110px;
+    margin-top: -40px;
+    text-decoration: none;
+}
+
+#user-name{
+    display: block;
+    color: grey;
+    margin-left: 110px;
+    margin-top: -20px;
+    text-decoration: none;
+}
+
+.account-info{
+    display: flex;
+    padding-left: 10px;
+}
+
+.tweet-info{
+    margin: 5px;
+    margin-top: 20px;
+}
+
+.tweet-info-heading a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tweet-info-stats a{
+    font-size: 1.4em;
+    text-decoration: none;
+    color: var(--blue-color);
+    font-weight: bolder;
+}
+
+.trend-info{
+    background-color: white;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.trend-heading{
+    display: flex;
+    align-items: center;
+}
+
+.trend-heading h3{
+    margin-right: 10px;
+    margin-top: 10;
+}
+
+.trend-heading a{
+    text-decoration: none;
+    color: var(--blue-color);
+    font-size: 0.8em;
+}
+
+.trends{
+    
+}
+
+.trends h4{
+    color: var(--blue-color);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.trends p{
+    margin-top: 0;
+    color: grey;
+    
+}
+
+#timeline{
+    width: 48%;
+    border: 2px solid blue;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: white;
+}
+
+#follower-footer{
+    width: 25%;
+    border: 2px solid green;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
