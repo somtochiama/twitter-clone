@@ -17,13 +17,11 @@ main{
 
 #profile-trend{
     width: 25%;
-    border: 2px solid red;
     background-color: var(--grey-color);
     overflow: hidden;
 }
 
 .profile-info{
-    border: 2px solid yellow;
     background-color: #1da1f2;
     padding-top: 70px;
     padding-left: 10px;
@@ -105,10 +103,6 @@ main{
     font-size: 0.8em;
 }
 
-.trends{
-    
-}
-
 .trends h4{
     color: var(--blue-color);
     margin-bottom: 0;
@@ -123,7 +117,6 @@ main{
 
 #timeline{
     width: 48%;
-    border: 2px solid blue;
     margin-left: 1%;
     margin-right: 1%;
     background-color: white;
@@ -131,7 +124,6 @@ main{
 
 #follower-footer{
     width: 25%;
-    border: 2px solid green;
     background-color: var(--grey-color);
 }
 
