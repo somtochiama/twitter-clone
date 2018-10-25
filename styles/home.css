@@ -5,6 +5,7 @@
 
 body{
     background-color: #e6ecf0;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
 main{
@@ -131,7 +132,104 @@ main{
 #follower-footer{
     width: 25%;
     border: 2px solid green;
+    background-color: var(--grey-color);
+}
+
+#follower-info{
     background-color: white;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.follower-header{
+    display: flex;
+    align-items: center;
+}
+
+.follower-header h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.follower-header a{
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 0.8em;
+    color: var(--blue-color)
+}
+
+.follower-card{
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid rgba(125,125,125,0.5);
+}
+
+.follower-card img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.user_handle{
+    
+}
+
+.user_handle p{
+    display: inline;
+    font-weight: bolder;
+}
+
+.user_handle a{
+    text-decoration: none;
+    color: gray;
+}
+
+.user_handle button{
+    border: 1px solid var(--blue-color);
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: var(--blue-color);
+    font-weight: bolder;
+    margin-top: 3px;
+}
+
+.user_handle button:focus{
+    outline: none;
+}
+
+.user_handle button:hover{
+    background-color: rgba(29,161,242, 0.1);
+}
+
+.people-you-know{
+    display: flex;
+    align-items: center;
+}
+
+.people-you-know i{
+    color: var(--blue-color);
+    margin-right: 10px;
+}
+
+.people-you-know{
+    color: var(--blue-color);
+    font-weight: lighter;
+}
+
+#twitter-footer{
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#twitter-footer a{
+    text-decoration: none;
+    color: gray;
+    font-size: 0.8em;
+    padding: 0 1px;
 }
 
 
