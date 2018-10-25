@@ -49,7 +49,7 @@
 	word-spacing: 3px;
 }
 
-input {	 
+.sign-up-container input {	 
 	width: 100%;
 	display: block;
 	border: 0;
@@ -63,3 +63,89 @@ input {
 	 color: white;
 	 font-size: 20px;
 	}
+
+nav{
+    width: 70%;
+    margin: auto;
+}
+
+nav ul{
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+
+.nav-logo{
+    font-size: 1.7em;
+    color: #1da1f2;
+    margin-right: 20px;
+}
+
+.search-box-wrapper{
+    position: relative;
+}
+
+.t-search{
+    border: none;
+    background-color: #ddd;
+    border-radius: 30px;
+    width: 500px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.t-search::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #212121;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.search-box-wrapper i{
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    color: #262626;
+}
+
+.log-in{
+    background-color: white;
+    color: #1da1f2;
+    border: 2px solid #1da1f2;
+    padding: 7px 25px;
+    border-radius: 20px;
+    margin-left: 80px;
+    margin-right: 15px;
+    font-weight: bolder;
+}
+
+.log-in:focus{
+    outline: none;
+}
+
+.sign-up{
+    background-color: #1da1f2;
+    color: white;
+    padding: 9px 25px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 30px;
+    font-weight: bolder;
+}
+
+.sign-up:focus{
+    outline: none;
+}
+
+nav ul li:last-child{
+    color: #1da1f2;
+    font-size: 1.3em;
+}
+
+
+
