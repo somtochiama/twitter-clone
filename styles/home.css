@@ -6,7 +6,7 @@
 
 main{
     width: 90%;
-    margin: auto;
+    margin: 0px auto;
     display: flex;
     background-color:#e6ecf0; 
 }
@@ -40,10 +40,18 @@ main{
 #display-name{
     display: block;
     color: black;
-    font-size: 1.5em;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    /* font-size: 1.5em; */
     margin-left: 110px;
     margin-top: -40px;
     text-decoration: none;
+}
+
+a#display-name:hover, a#user-name:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 #user-name{
@@ -65,9 +73,19 @@ main{
 }
 
 .tweet-info-heading a{
-    color: black;
-    text-decoration: none;
+
+    color: #657786;
+    font-size: 12px;
     font-weight: bold;
+    letter-spacing: .02em;
+    line-height: 16px;
+    text-decoration: none;
+    /* color: black;
+    font-weight: bold; */
+}
+
+.tweet-info-heading a:hover {
+    color: #1da1f2;
 }
 
 .tweet-info-stats a{
@@ -105,9 +123,19 @@ main{
     margin-top: 0;
 }
 
+.trends h4:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .trends p{
     margin-top: 0;
     color: grey; 
+}
+
+.people-you-know h5:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 #timeline{
@@ -184,6 +212,7 @@ main{
 }
 
 .user_handle button:hover{
+    cursor: pointer;
     background-color: rgba(29,161,242, 0.1);
 }
 
@@ -215,6 +244,10 @@ main{
     padding: 0 1px;
 }
 
+#twitter-footer a:hover {
+    color: #1da1f2;
+}
+
 body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     position: relative;
@@ -229,21 +262,27 @@ nav {
     display: flex;
     border-bottom: 1px solid rgba(0,0,0,0.25);
     height: 46px;
-    position: relative;
+    position: fixed;
     width: 100%;
     align-items: center;
     font-size: inherit;
     line-height: 20px;
+    background-color: #fff;
 }
 
-/* input#modeswitch {
+input#modeswitch {
 position: absolute;
 top: -9999px;
 left: -9999px;
-*/
+
+}
+
 label {
     display: block;
     width: 50px;
+    height: 25px;
+    font: 14px/25px Helvetica, Aria, sans-serif;
+    margin: 50px 2px;
     border-radius: 8px;
     color: #fff;
     text-align: center;
@@ -252,10 +291,30 @@ label {
     padding: 5px;
 }
 
+label:hover {
+    cursor: pointer;
+
+}
+
 /* Dark Theme */
   
 input#modeswitch:checked + div > main  {
     background: #10171e;
+}
+
+input#modeswitch:checked + div > nav {
+    background: #1c2938;
+}
+
+input#modeswitch:checked + div > nav #search-input {
+    background-color: #182430;
+    border-radius: 21px;
+    border: 1px solid #38444d;
+}
+
+input#modeswitch:checked + div > nav #search-input:focus {
+    outline: none;
+    border: 3px solid #1da1f2;
 }
 
 input#modeswitch:checked + div  {
@@ -266,8 +325,13 @@ input#modeswitch:checked + div  #profile-trend {
     background: #10171e;
 }
 
+input#modeswitch:checked + div , input#modeswitch:checked + div .trend-info{
+    border: 0.5px solid rgba(125,125,125,0.5) !important;
+}
+
 input#modeswitch:checked + div .profile-name {
     background: #1c2938;
+    border: 0.5px solid rgba(125,125,125,0.5) !important;    
 }
 
 input#modeswitch:checked + div .tweet-info-heading > a {
@@ -305,6 +369,10 @@ input#modeswitch:checked + div .follower-card {
 }
 
 input#modeswitch:checked + div  .user_handle > button {
+    background:  #10171e;
+}
+
+input#modeswitch:checked + div  .user_handle > button:hover {
     background: #1c2938;
 }
 
@@ -319,6 +387,10 @@ a.nav-links {
     margin: auto 15px auto 5px;
 }
 
+.active, a.nav-links:hover {
+    color: #1da1f2;
+} 
+
 ul#nav-list {
     list-style-type: none;
     margin: 0;
@@ -332,7 +404,7 @@ li.nav-item {
 .inner-nav {
     display: flex;
     flex-direction: row;
-    width: 890px;
+    width: 90%;
     margin: 0px auto;
     align-items: cnter;
     justify-content: space-between;
@@ -350,6 +422,7 @@ li.nav-item {
     height: 32px;
     border-radius: 50%;
     margin: auto 15px;
+    border-radius: 50%;
 }
 
 .tweet-btn {
@@ -367,6 +440,10 @@ li.nav-item {
 
 .tweet-btn:focus{
     outline: 0;
+}
+.tweet-btn:hover {
+    background-color: #0885ce;
+    border: 1px solid #0885ce;
 }
 
 #right-nav {
@@ -395,8 +472,10 @@ li.nav-item {
     
 }
 
-#search-input:focus{
-    outline: 0;
+#search-input:focus {
+    outline: none;
+    border: 3px solid #1da1f2;
+    color: white;
 }
 
 .search-box-wrapper i{
@@ -558,3 +637,12 @@ i {
 
 
 
+.user_handle p:hover {
+    cursor: pointer;
+    color: #1da1f2;
+    text-decoration: underline;
+}
+
+.container {
+    margin-top: 60px;
+}

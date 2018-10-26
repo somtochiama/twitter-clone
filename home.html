@@ -11,14 +11,14 @@
     </head>
 
     <body>
-        <label for="modeswitch">Switch Mode</label>
-        <input type="checkbox" id="modeswitch" />
+        <label for="modeswitch">Mode</label>
+        <input type="checkbox" id="modeswitch" >
         <div>
             <nav>
                 <div class="inner-nav">
                     <div id="left-nav">
                         <ul id="nav-list">
-                            <li class="nav-item"><a href="#" class="nav-links"><i class="fa fa-home"></i>Home</a></li>
+                            <li class="nav-item"><a href="#" class="nav-links active"><i class="fa fa-home"></i>Home</a></li>
                             <li class="nav-item"><a href="#" class="nav-links"><i class="far fa-bell"></i>Notifications</a></li>
                             <li class="nav-item"><a href="#" class="nav-links"><i class="far fa-envelope"></i>Messages</a></li>
                         </ul>
@@ -36,7 +36,7 @@
                 </div>
             </nav>
             <main>
-                <div id="profile-trend">
+                <div id="profile-trend" class="container">
                     <div class="profile-info">
                         <img id="profile-photo" src="images/profile1.jpg" alt="profile-avatar">
                         <div class="profile-name">
@@ -59,7 +59,7 @@
                         </div>
                         
                     </div>
-                    <div class="trend-info">
+                    <div class="trend-info" class="container">
                         <div class="trend-heading">
                             <h3>Trends for you</h3>
                             <span><a href="/">Change</a></span>
@@ -86,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="timeline">
+                <div id="timeline" class="container">
                     <div id="timeline-heading">
                         <span><img src="images/profile1.jpg" alt="profile-photo"></span>
                         <input type="text" class="tweet-input" placeholder="What's happening?" >
@@ -136,7 +136,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="follower-footer">
+                <div id="follower-footer" class="container">
                     <div id="follower-info">
                         <div class="follower-header">
                             <h3>Who to follow</h3> <span><a href="/">Refresh</a></span><a href="/">View all</a><span></span>
