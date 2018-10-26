@@ -298,6 +298,10 @@ li.nav-item {
     flex-direction: row;
 } 
 
+.search-box-wrapper{
+    position: relative;
+}
+
 #search-input {
     background-color: #f5f8fa;
     border-radius: 21px;
@@ -312,6 +316,17 @@ li.nav-item {
     padding: 8px 32px 8px 12px;
     transition: all .2s ease-in-out;
     width: 100%;
+    
+}
+
+.search-box-wrapper i{
+    position: absolute;
+    left: 160px;
+    top:8px;
+    color: #262626;
+    opacity: 0.4;
+    font-size: 1.2em;
+    cursor: pointer;
 }
 
 #left-nav {
