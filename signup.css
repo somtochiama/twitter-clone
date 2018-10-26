@@ -3,7 +3,7 @@ body,html {
 }
 body {
     position: relative;
-    
+
 }
 
 .overlay {
@@ -13,17 +13,18 @@ body {
     height:100%;
     top: 0;
     left:0;
-   background: grey;
-    opacity: 0.2;
+   background: black;
+    opacity: 0.3;
     z-index: -1;
 }
    
 .middle-box {
     display: inline-block;
-  	width: 600px;
-  	height: 500px;
-   margin-top: 0;
-    margin-left: 25%;
+  	width: 550px;
+  	height: 550px;
+    margin-left: 30%;
+    position: absolute;
+    margin-top: 0;
 	padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
@@ -32,11 +33,12 @@ body {
     
 }
  .sign-up-container {
-	 width: 600px;	   
+	 width: 550px;	   
 }
 .logo{
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
 
 .logo i{
@@ -64,43 +66,58 @@ body {
     word-spacing: 2px;
 }
 .sign-up-container h5 {
-	font-size: 1.1em;
+	font-size: 1.0em;
 	color: #1da1f2;
-	word-spacing: 3px;
+	font-family:serif;
+    font-weight: lighter;
 }
 
-.sign-up-container input {	 
+input {	 
 	width: 100%;
 	display: block;
 	border: 0;
   	outline: 0;
   	background: transparent;
   	padding: 10px 0;
-  	border-bottom: solid 1px black;
+    border-bottom: solid 1px grey;
+  	
 }
-.sign-up-container .name {
+.middle-box .sign-up-container .name {
     margin-bottom: 40px;
 }
-
-.sign-up-container .name:focus {
-   border-bottom: solid 1px #1da1f2; 
+.middle-box .sign-up-container .name:focus {
+    border-bottom: 2px solid #1da1f2;
+}
+.middle-box .sign-up-container .phone:focus {
+    border-bottom: 2px solid #1da1f2;
 }
 	 
 ::placeholder {
-	 color: grey;
-	 font-size: 20px;
+	 color: black;
+	 font-size: 18px;
+     font-weight: lighter;
+     font: serif;
 	}
 
 nav{
     width: 70%;
     margin: auto;
-   
+    margin-bottom: 0;
+    padding: 0;
+    position: relative;
+}
+ .line{
+    width: 100%
+    margin:0;
+    padding: 0;
+    border-bottom: 1px solid grey;   
 }
 
 nav ul{
     padding-left: 0;
     display: flex;
     align-items: center;
+
     
 }
 
@@ -117,6 +134,7 @@ nav ul li{
 
 .search-box-wrapper{
     position: relative;
+    height: 30px;
 }
 
 .t-search{
