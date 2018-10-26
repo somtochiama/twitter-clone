@@ -72,6 +72,8 @@ body, html {
     font-weight: bolder;
 }
 
+
+
 .sign-in-container h2{
     font-size: 1.8em;
     font-weight: bolder;
@@ -100,6 +102,7 @@ body, html {
 
 .sign-up-btn:hover{
     background-color: royalblue;
+    cursor:pointer;
 }
 
 .log-in-btn{
@@ -118,7 +121,8 @@ body, html {
 }
 
 .log-in-btn:hover, .logo button:hover{
-    background-color: rgba(29,161,242, 0.08)
+    background-color: rgba(29,161,242, 0.08);
+    cursor:pointer;
 }
 
 footer{
@@ -137,3 +141,6 @@ footer ul li{
     color: #bcb8c2;
     font-size: 0.75em;
 }
+footer ul li:hover {
+    cursor: pointer;
+};
