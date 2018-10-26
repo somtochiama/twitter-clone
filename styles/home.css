@@ -3,20 +3,16 @@
     --grey-color:#e6ecf0;
 }
 
-/* body{
+body{
     
-    font-family: "Segoe UI", Arial, sans-serif;
-<<<<<<< HEAD
-} */
-=======
+    /* font-family: "Segoe UI", Arial, sans-serif; */
     padding: 0px;
     margin: 0px;
 }
->>>>>>> theme-style
 
 main{
     width: 90%;
-    margin: auto;
+    margin: 10px auto;
     display: flex;
     background-color:#e6ecf0; 
 }
@@ -245,16 +241,22 @@ nav {
     align-items: center;
     font-size: inherit;
     line-height: 20px;
+    background-color: #fff;
 }
 
-/* input#modeswitch {
+input#modeswitch {
 position: absolute;
 top: -9999px;
 left: -9999px;
-*/
+
+}
+
 label {
     display: block;
     width: 50px;
+    height: 25px;
+    font: 14px/25px Helvetica, Aria, sans-serif;
+    margin: 50px 2px;
     border-radius: 8px;
     color: #fff;
     text-align: center;
@@ -263,10 +265,25 @@ label {
     padding: 5px;
 }
 
+label:hover {
+    cursor: pointer;
+
+}
+
 /* Dark Theme */
   
 input#modeswitch:checked + div > main  {
     background: #10171e;
+}
+
+input#modeswitch:checked + div > nav {
+    background: #1c2938;
+}
+
+input#modeswitch:checked + div > nav #search-input {
+    background-color: #182430;
+    border-radius: 21px;
+    border: 1px solid #38444d;
 }
 
 input#modeswitch:checked + div  {
@@ -277,8 +294,13 @@ input#modeswitch:checked + div  #profile-trend {
     background: #10171e;
 }
 
+input#modeswitch:checked + div , input#modeswitch:checked + div .trend-info{
+    border: 0.5px solid rgba(125,125,125,0.5) !important;
+}
+
 input#modeswitch:checked + div .profile-name {
     background: #1c2938;
+    border: 0.5px solid rgba(125,125,125,0.5) !important;    
 }
 
 input#modeswitch:checked + div .tweet-info-heading > a {
@@ -343,7 +365,7 @@ li.nav-item {
 .inner-nav {
     display: flex;
     flex-direction: row;
-    width: 890px;
+    width: 90%;
     margin: 0px auto;
     align-items: cnter;
     justify-content: space-between;
@@ -361,6 +383,7 @@ li.nav-item {
     height: 32px;
     border: 50%;
     margin: auto 15px;
+    border-radius: 50%;
 }
 
 .tweet-btn {
