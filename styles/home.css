@@ -80,8 +80,6 @@ a#display-name:hover, a#user-name:hover {
     letter-spacing: .02em;
     line-height: 16px;
     text-decoration: none;
-    /* color: black;
-    font-weight: bold; */
 }
 
 .tweet-info-heading a:hover {
