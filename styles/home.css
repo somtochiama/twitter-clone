@@ -6,6 +6,8 @@
 body{
     background-color: #e6ecf0;
     font-family: "Segoe UI", Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
 
 main{
@@ -225,6 +227,83 @@ main{
 }
 
 
+/* input#modeswitch {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+ } */
+
+label {
+    display: block;
+    width: 50px;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    background-color: #1da1f2;
+    padding: 5px;
+}
+
+/* Dark Theme */
+  
+input#modeswitch:checked + div > main  {
+    background: #10171e;
+}
+
+input#modeswitch:checked + div  {
+    background: #10171e;
+}
+
+input#modeswitch:checked + div > main > #profile-trend {
+    background: #10171e;
+}
+
+input#modeswitch:checked + div > main > #profile-trend > .profile-info > .profile-name {
+    background: #1c2938;
+}
+
+input#modeswitch:checked + div > main > #profile-trend > .profile-info > .profile-name > .account-info > .tweet-info > .tweet-info-heading > a {
+    color: gray ;
+}
+
+input#modeswitch:checked + div > main > #profile-trend > .profile-info > .profile-name > #display-name{
+    color: #fff;
+}
+
+input#modeswitch:checked + div > main > #profile-trend > .trend-info {
+    background: #1c2938;
+    color: #fff;
+}
+
+
+input#modeswitch:checked + div > main > #timeline {
+    background: #1c2938;
+}
+
+input#modeswitch:checked + div > main > #follower-footer {
+    background: #10171e;
+}
+
+input#modeswitch:checked + div > main > #follower-footer > #follower-info {
+    background: #1c2938;
+}
+
+input#modeswitch:checked + div > main > #follower-footer > #follower-info > .follower-header {
+    color: #fff;
+}
+
+input#modeswitch:checked + div > main > #follower-footer > #follower-info > .follower-card {
+    color: #fff;
+}
+
+input#modeswitch:checked + div > main > #follower-footer > #follower-info > .follower-card > .user_handle > button {
+    background: #1c2938;
+}
+
+input#modeswitch:checked + div > main > #follower-footer > #twitter-footer {
+    background: #1c2938;
+    border: 0.5px solid rgba(125,125,125,0.5);
+}
 
 
 
