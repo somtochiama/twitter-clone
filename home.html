@@ -5,159 +5,183 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="styles/home.css">
         <title>Twitter</title>
     </head>
 
     <body>
-        <nav>
-            <div id="left-nav">
-                <a><i class="fa fa-home"></i>Home</a>
-                <a><i class="fa fa-bell"></i>Notifications</a>
-                <a><i class="fa fa-envelope"></i>Messages</a>
-            </div>
-            <img src="images/logo.png" alt="twitter-logo">
-            <div id="right-nav">
-                <input type="text">
-                <img src="#" alt="Profile-picture">
-                <button>Tweet</button>
-            </div>
-        </nav>
-        <main>
-            <div id="profile-trend">
-                <div class="profile-info">
-                    <img src="images/profile1.jpg" src="profile-avatar">
-                    <a href="#">Shady's Baby</a>
-                    <a href="#">@AmaOnyekwere</a>
-                    <div class="account-info">
-                        <div class="tweet-info">
-                            <span><a href="/">Tweets</a></span>
-                            <span><a href="/">264</a></span>
+        <label for="modeswitch">Mode</label>
+        <input type="checkbox" id="modeswitch" >
+        <div>
+            <nav>
+                <div class="inner-nav">
+                    <div id="left-nav">
+                        <ul id="nav-list">
+                            <li class="nav-item "><a href="#" class="nav-links active "><i class="fa fa-home"></i>Home</a></li>
+                            <li class="nav-item"><a href="#" class="nav-links"><i class="far fa-bell"></i>Notifications</a></li>
+                            <li class="nav-item"><a href="#" class="nav-links"><i class="far fa-envelope"></i>Messages</a></li>
+                        </ul>
+                    </div>
+                    <img src="images/icon.png" alt="twitter-logo" id="twitter-logo">
+                    <div id="right-nav">
+    <!--                    <input type="text" id="search-input" value="Search Twitter">-->
+                        <div class="search-box-wrapper">
+                            <input type="text" id="search-input" placeholder="Search twitter">
+                            <i class="fa fa-search"></i>
                         </div>
-                        <div  class="tweet-info">
-                            <span><a href="/">Following</a></span>
-                            <span><a href="/">248</a></span>
-                        </div>
-                        <div class="tweet-info">
-                            <span><a href="/">Followers</a></span>
-                            <span><a href="/">248</a></span>
-                        </div>
+                        <img src="images/profile1.jpg" alt="Profile-picture" id="top-profile">
+                        <button class="tweet-btn">Tweet</button>
                     </div>
                 </div>
-                <div class="trend-info">
-                    <div class="trend-heading">
-                        <h3>Trends for you</h3>
-                        <span><a href="/">Change</a></span>
-                    </div>
-                    <div class="trends">
-                        <h4>#DSTVCompact</h4>
-                        <p>Omope Abdul Azeez is tweeting about this</p>
-                    </div>
-                    <div class="trends">
-                        <h4>#NES24</h4>
-                        <p>Omope Abdul Azeez and Victor Asemota are tweeting about this</p>
-                    </div>
-                    <div class="trends">
-                        <h4>#WhatYouDoByFlodaGrae</h4>
-                        <p>Omope Abdul Azeez is tweeting about this</p>
-                    </div>
-                    <div class="trends">
-                        <h4>#DSTVCompact</h4>
-                        <p>Omope Abdul Azeez is tweeting about this</p>
-                    </div>
-                    <div class="trends">
-                        <h4>#DSTVCompact</h4>
-                        <p>Omope Abdul Azeez is tweeting about this</p>
-                    </div>
-                </div>
-            </div>
-            <div id="timeline">
-                <div id="timeline-heading">
-                    <span><img src="images/profile1.jpg" alt="profile-photo"></span>
-                    <input type="text" value="What is happening">
-                </div>
-                <div class="see-new"><a href="/">See new tweets</a></div>
-                <div class="tweet">
-                    <img src="/" alt="profile-avatar">
-                    <div>Kene Okafor <span><a href="/">@kenrex 3h</a></span></div>
-                    <p>Besty of 12 years and counting</p>
-                    <div class="quoted-tweet">
-                            <div class="tweet">
-                                <img src="/" alt="profile-avatar">
-                                <div>Kene Okafor <span><a href="/">@kenrex 3h</a></span></div>
-                                <p>Besty of 12 years and counting</p>
+            </nav>
+            <main>
+                <div id="profile-trend" class="container">
+                    <div class="profile-info">
+                        <img id="profile-photo" src="images/profile1.jpg" alt="profile-avatar">
+                        <div class="profile-name">
+                            <a href="#" id="display-name">Shady's Baby</a><br>
+                            <a href="#" id="user-name">@AmaOnyekwere</a>
+                            <div class="account-info">
+                                <div class="tweet-info">
+                                    <span class="tweet-info-heading"><a href="/">Tweets</a></span><br>
+                                    <span class="tweet-info-stats"><a href="/">264</a></span>
+                                </div>
+                                <div  class="tweet-info">
+                                    <span class="tweet-info-heading" ><a href="/">Following</a></span><br>
+                                    <span class="tweet-info-stats"><a href="/">248</a></span>
+                                </div>
+                                <div class="tweet-info">
+                                    <span class="tweet-info-heading"><a href="/">Followers</a></span><br>
+                                    <span class="tweet-info-stats"><a href="/">248</a></span>
+                                </div>
                             </div>
+                        </div>
+                        
                     </div>
-                    <div class="comment-like">
-                        <span><i class="fa fa-comment"></i> 4</span>
-                        <span><i class="fa fa-retweet"></i> 23</span>
-                        <span><i class="fa fa-retweet"></i> 23</span> 
-                        <span><i class="fa fa-heart"></i> 34</span>                       
-                    </div>
-                </div>
-                <div class="tweet">
-                    <img src="/" alt="profile-avatar">
-                    <div>Kene Okafor <span><a href="/">@kenrex 3h</a></span></div>
-                    <p>Besty of 12 years and counting</p>
-                    <div class="comment-like">
-                        <span><i class="fa fa-comment"></i> 4</span>
-                        <span><i class="fa fa-retweet"></i> 23</span>
-                        <span><i class="fa fa-retweet"></i> 23</span> 
-                        <span><i class="fa fa-heart"></i> 34</span>                       
-                    </div>
-                </div>
-                <div class="tweet">
-                    <img src="/" alt="profile-avatar">
-                    <div>Kene Okafor <span><a href="/">@kenrex 3h</a></span></div>
-                    <p>Besty of 12 years and counting</p>
-                    <div class="comment-like">
-                        <span><i class="fa fa-comment"></i> 4</span>
-                        <span><i class="fa fa-retweet"></i> 23</span>
-                        <span><i class="fa fa-retweet"></i> 23</span> 
-                        <span><i class="fa fa-heart"></i> 34</span>                       
-                    </div>
-                </div>
-            </div>
-            <div id="follower-footer">
-                <div id="follower-info">
-                    <div class="follower-header">Who to follow <span><a href="/">Refresh</a></span><a href="/">View all</a><span></span></div>
-                    <div class="follower-card">
-                        <img src="" alt="profile-photo">
-                        <div class="user_handle">Cristiano Ronaldo <span><a href="/">@Cristiano</a></span></div>
-                        <button>Follow</button>
-                    </div>
-                    <div class="follower-card">
-                        <img src="" alt="profile-photo">
-                        <div class="user_handle">Cristiano Ronaldo <span><a href="/">@Cristiano</a></span></div>
-                        <button>Follow</button>
-                    </div>
-                    <div class="follower-card">
-                        <img src="" alt="profile-photo">
-                        <div class="user_handle">Cristiano Ronaldo <span><a href="/">@Cristiano</a></span></div>
-                        <button>Follow</button>
-                    </div>
-                    <div class="gmail-import">
-                        <img >
-                        <h5>Find people you know</h5>
-                        <p><a href="/">Import your contacts from Gmail</a></p>
-                        <a>Connect other address books</a>
+                    <div class="trend-info" class="container">
+                        <div class="trend-heading">
+                            <h3>Trends for you</h3>
+                            <span><a href="/">Change</a></span>
+                        </div>
+                        <div class="trends">
+                            <h4>#DSTVCompact</h4>
+                            <p>Omope Abdul Azeez is tweeting about this</p>
+                        </div>
+                        <div class="trends">
+                            <h4>#NES24</h4>
+                            <p>Omope Abdul Azeez and Victor Asemota are tweeting about this</p>
+                        </div>
+                        <div class="trends">
+                            <h4>#WhatYouDoByFlodaGrae</h4>
+                            <p>Omope Abdul Azeez is tweeting about this</p>
+                        </div>
+                        <div class="trends">
+                            <h4>#DSTVCompact</h4>
+                            <p>Omope Abdul Azeez is tweeting about this</p>
+                        </div>
+                        <div class="trends">
+                            <h4>#DSTVCompact</h4>
+                            <p>Omope Abdul Azeez is tweeting about this</p>
+                        </div>
                     </div>
                 </div>
-                <div id="twitter-footer">
-                    <div>&copy; 2018 <a href="/">About</a>
-                        <a href="/">Help Center</a>
-                        <a href="/">Terms</a>
-                        <a href="/">Privacy Policy</a>
-                        <a href="/">Cookies</a>
-                        <a href="/">Ads Info</a>
-                        <a href="/">Brand</a>
-                        <a href="/">Blog</a>
-                        <a href="/">Status</a>
-                        <a href="/">Apps</a>
-                        <a href="/">Jobs</a>
-                        <a href="/">Marketing</a>
-                        <a href="/">Businesses</a></div>
+                <div id="timeline" class="container">
+                    <div id="timeline-heading">
+                        <span><img src="images/profile1.jpg" alt="profile-photo"></span>
+                        <input type="text" class="tweet-input" placeholder="What's happening?" >
+                        <i class="far fa-image"></i>
+                    </div>
+                    <div class="see-new"><a href="/">See new tweets</a></div>
+                    <div class="tweet">
+                        <div class="tweet-header"> <img src="images/george.jpg" alt="profile-avatar" class="t-display-image"><p class="t-displaname">Kene Okafor</p><a href="/" class="t-username">@kenrex</a>
+                        <a class="tweet-time">3h</a></div>
+                        <p class="tweet-text">Besty of 12 years and counting <br>
+                        Can you cod ewith me?</p>
+                        
+                        <img class="tweet-image" src="images/auba.jpg" alt="Failed to load image">
+                        <div class="comment-like">
+                            <span class="ic-comment"><i class="fa fa-comment"></i> 4</span>
+                            <span class="ic-rt"><i class="fa fa-retweet"></i> 23</span>
+                            <span class="ic-heart"><i class="fa fa-heart"></i> 23</span> 
+                            <span class="ic-message"><i class="far fa-envelope"></i></span>                       
+                        </div>
+                    </div>
+                    <div class="tweet">
+                        <div class="tweet-header"> <img src="images/octocat.png" alt="profile-avatar" class="t-display-image"><p class="t-displaname">Kene Okafor</p><a href="/" class="t-username">@kenrex</a>
+                        <a class="tweet-time">3h</a></div>
+                        <p class="tweet-text">Besty of 12 years and counting <br>
+                        Can you cod ewith me?</p>
+                        
+                        <img class="tweet-image" src="images/mac.jpg" alt="Failed to load image">
+                        <div class="comment-like">
+                            <span class="ic-comment"><i class="fa fa-comment"></i> 4</span>
+                            <span class="ic-rt"><i class="fa fa-retweet"></i> 23</span>
+                            <span class="ic-heart"><i class="fa fa-heart"></i> 23</span> 
+                            <span class="ic-message"><i class="far fa-envelope"></i></span>                       
+                        </div>
+                    </div>
+                    <div class="tweet">
+                        <div class="tweet-header"> <img src="images/george.jpg" alt="profile-avatar" class="t-display-image"><p class="t-displaname">Kene Okafor</p><a href="/" class="t-username">@kenrex</a>
+                        <a class="tweet-time">3h</a></div>
+                        <p class="tweet-text">Besty of 12 years and counting <br>
+                        Can you cod ewith me?</p>
+                        
+                        <img class="tweet-image" src="images/auba.jpg" alt="Failed to load image">
+                        <div class="comment-like">
+                            <span class="ic-comment"><i class="fa fa-comment"></i> 4</span>
+                            <span class="ic-rt"><i class="fa fa-retweet"></i> 23</span>
+                            <span class="ic-heart"><i class="fa fa-heart"></i> 23</span> 
+                            <span class="ic-message"><i class="far fa-envelope"></i></span>                       
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </main>
+                <div id="follower-footer" class="container">
+                    <div id="follower-info">
+                        <div class="follower-header">
+                            <h3>Who to follow</h3> <span><a href="/">Refresh</a></span><a href="/">View all</a><span></span>
+                        </div>
+                        <div class="follower-card">
+                            <img src="images/george.jpg" alt="profile-photo">
+                            <div class="user_handle"><p>Cristiano Ronaldo</p> <span><a href="/">@Cris...</a></span>
+                            <button>Follow</button>
+                            </div>
+                            
+                        </div>
+                        <div class="follower-card">
+                            <img src="images/george.jpg" alt="profile-photo">
+                            <div class="user_handle"><p>Cristiano Ronaldo</p> <span><a href="/">@Cris...</a></span>
+                            <button>Follow</button>
+                            </div>
+                        </div>
+                        <div class="follower-card">
+                            <img src="images/george.jpg" alt="profile-photo">
+                            <div class="user_handle"><p>Cristiano Ronaldo</p> <span><a href="/">@Cris...</a></span>
+                            <button>Follow</button>
+                            </div>
+                        </div>
+                        <div class="people-you-know">
+                            <i class="fas fa-user-friends"></i>
+                            <h5>Find people you know</h5>
+                        </div>
+                    </div>
+                    <div id="twitter-footer">
+                        <div><a href="/"> &copy; 2018  About</a>
+                            <a href="/">Help Center</a>
+                            <a href="/">Terms</a>
+                            <a href="/">Privacy Policy</a>
+                            <a href="/">Cookies</a>
+                            <a href="/">Ads Info</a>
+                            <a href="/">Brand</a>
+                            <a href="/">Blog</a>
+                            <a href="/">Status</a>
+                            <a href="/">Apps</a>
+                            <a href="/">Jobs</a>
+                            <a href="/">Marketing</a>
+                            <a href="/">Businesses</a></div>
+                    </div>
+                </div>
+            </main>
+        </div>
     </body>
 </html>
