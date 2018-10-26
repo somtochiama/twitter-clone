@@ -381,14 +381,39 @@ input#modeswitch:checked + div > main  #twitter-footer {
     border: 0.5px solid rgba(125,125,125,0.5);
 }
 
+input#modeswitch:checked + div #timeline  {
+    border: 0.5px solid rgba(125,125,125,0.5);
+
+}
+
+input#modeswitch:checked + div .tweet {
+    color: #fff;
+    border-bottom: 0.5px solid rgba(125,125,125,0.5);
+}
+
+
+input#modeswitch:checked + div > main  .tweet-input {
+    background-color: #10171e;
+}
+
+input#modeswitch:checked + div > main .see-new {
+    background-color: #182430;
+    border: 0.5px solid rgba(125,125,125,0.5);
+}
+
+input#modeswitch:checked + div > main  .see-new:hover{
+    background-color: #10171e;
+}
+
+
 a.nav-links {
     text-decoration: none;
     color: #66757f;
     margin: auto 15px auto 5px;
 }
 
-.active, a.nav-links:hover {
-    color: #1da1f2;
+a.active, a.nav-links:hover {
+    color: #1da1f2 !important;
 } 
 
 ul#nav-list {
@@ -517,7 +542,7 @@ i {
 }
 
 #timeline-heading input{
-    border: 1px solid var(--blue-color);
+    border: 0.5px solid var(--blue-color);
     border-radius: 10px;
     padding: 10px;
     height: 18px;
@@ -546,6 +571,11 @@ i {
     border-top: 1px solid rgba(100,100,100,0.1);
     border-bottom: 1px solid rgba(100,100,100,0.1);
     background-color: rgba(200,200,200, 0.2);
+}
+
+.see-new:hover{
+    cursor: pointer;
+    background-color: #e6ecf0;
 }
 
 .see-new a{
@@ -609,7 +639,7 @@ i {
 }
 
 .comment-like span{
-    color: gray;
+    color: #8899a6;;
     margin-right: 30px;
 }
 
