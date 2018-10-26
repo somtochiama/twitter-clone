@@ -12,7 +12,7 @@ body{
 
 main{
     width: 90%;
-    margin: 10px auto;
+    margin: 0px auto;
     display: flex;
     background-color:#e6ecf0; 
 }
@@ -46,10 +46,18 @@ main{
 #display-name{
     display: block;
     color: black;
-    font-size: 1.5em;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    /* font-size: 1.5em; */
     margin-left: 110px;
     margin-top: -40px;
     text-decoration: none;
+}
+
+a#display-name:hover, a#user-name:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 #user-name{
@@ -71,9 +79,19 @@ main{
 }
 
 .tweet-info-heading a{
-    color: black;
-    text-decoration: none;
+
+    color: #657786;
+    font-size: 12px;
     font-weight: bold;
+    letter-spacing: .02em;
+    line-height: 16px;
+    text-decoration: none;
+    /* color: black;
+    font-weight: bold; */
+}
+
+.tweet-info-heading a:hover {
+    color: #1da1f2;
 }
 
 .tweet-info-stats a{
@@ -111,10 +129,20 @@ main{
     margin-top: 0;
 }
 
+.trends h4:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .trends p{
     margin-top: 0;
     color: grey;
     
+}
+
+.people-you-know h5:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 #timeline{
@@ -191,6 +219,7 @@ main{
 }
 
 .user_handle button:hover{
+    cursor: pointer;
     background-color: rgba(29,161,242, 0.1);
 }
 
@@ -222,6 +251,10 @@ main{
     padding: 0 1px;
 }
 
+#twitter-footer a:hover {
+    color: #1da1f2;
+}
+
 body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     position: relative;
@@ -236,7 +269,7 @@ nav {
     display: flex;
     border-bottom: 1px solid rgba(0,0,0,0.25);
     height: 46px;
-    position: relative;
+    position: fixed;
     width: 100%;
     align-items: center;
     font-size: inherit;
@@ -284,6 +317,11 @@ input#modeswitch:checked + div > nav #search-input {
     background-color: #182430;
     border-radius: 21px;
     border: 1px solid #38444d;
+}
+
+input#modeswitch:checked + div > nav #search-input:focus {
+    outline: none;
+    border: 3px solid #1da1f2;
 }
 
 input#modeswitch:checked + div  {
@@ -338,6 +376,10 @@ input#modeswitch:checked + div .follower-card {
 }
 
 input#modeswitch:checked + div  .user_handle > button {
+    background:  #10171e;
+}
+
+input#modeswitch:checked + div  .user_handle > button:hover {
     background: #1c2938;
 }
 
@@ -351,6 +393,10 @@ a.nav-links {
     color: #66757f;
     margin: auto 15px auto 5px;
 }
+
+.active, a.nav-links:hover {
+    color: #1da1f2;
+} 
 
 ul#nav-list {
     list-style-type: none;
@@ -399,6 +445,11 @@ li.nav-item {
     white-space: nowrap;
 }
 
+.tweet-btn:hover {
+    background-color: #0885ce;
+    border: 1px solid #0885ce;
+}
+
 #right-nav {
     display: flex;
     flex-direction: row;
@@ -425,6 +476,12 @@ li.nav-item {
     
 }
 
+#search-input:focus {
+    outline: none;
+    border: 3px solid #1da1f2;
+    color: white;
+}
+
 .search-box-wrapper i{
     position: absolute;
     left: 160px;
@@ -443,4 +500,14 @@ li.nav-item {
 i {
     font-size: 20px;
     margin-right: 5px;
+}
+
+.user_handle p:hover {
+    cursor: pointer;
+    color: #1da1f2;
+    text-decoration: underline;
+}
+
+.container {
+    margin-top: 60px;
 }
