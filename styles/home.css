@@ -254,53 +254,53 @@ input#modeswitch:checked + div  {
     background: #10171e;
 }
 
-input#modeswitch:checked + div > main > #profile-trend {
+input#modeswitch:checked + div  #profile-trend {
     background: #10171e;
 }
 
-input#modeswitch:checked + div > main > #profile-trend > .profile-info > .profile-name {
+input#modeswitch:checked + div .profile-name {
     background: #1c2938;
 }
 
-input#modeswitch:checked + div > main > #profile-trend > .profile-info > .profile-name > .account-info > .tweet-info > .tweet-info-heading > a {
+input#modeswitch:checked + div .tweet-info-heading > a {
     color: gray ;
 }
 
-input#modeswitch:checked + div > main > #profile-trend > .profile-info > .profile-name > #display-name{
+input#modeswitch:checked + div #display-name{
     color: #fff;
 }
 
-input#modeswitch:checked + div > main > #profile-trend > .trend-info {
+input#modeswitch:checked + div .trend-info {
     background: #1c2938;
     color: #fff;
 }
 
 
-input#modeswitch:checked + div > main > #timeline {
+input#modeswitch:checked + div #timeline {
     background: #1c2938;
 }
 
-input#modeswitch:checked + div > main > #follower-footer {
+input#modeswitch:checked + div #follower-footer {
     background: #10171e;
 }
 
-input#modeswitch:checked + div > main > #follower-footer > #follower-info {
+input#modeswitch:checked + div #follower-info {
     background: #1c2938;
 }
 
-input#modeswitch:checked + div > main > #follower-footer > #follower-info > .follower-header {
+input#modeswitch:checked + div .follower-header {
     color: #fff;
 }
 
-input#modeswitch:checked + div > main > #follower-footer > #follower-info > .follower-card {
+input#modeswitch:checked + div .follower-card {
     color: #fff;
 }
 
-input#modeswitch:checked + div > main > #follower-footer > #follower-info > .follower-card > .user_handle > button {
+input#modeswitch:checked + div  .user_handle > button {
     background: #1c2938;
 }
 
-input#modeswitch:checked + div > main > #follower-footer > #twitter-footer {
+input#modeswitch:checked + div > main  #twitter-footer {
     background: #1c2938;
     border: 0.5px solid rgba(125,125,125,0.5);
 }
