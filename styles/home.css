@@ -440,6 +440,10 @@ li.nav-item {
 
 }
 
+#twitter-logo:hover {
+    cursor: pointer;
+}
+
 #top-profile {
     width: 32px;
     height: 32px;
