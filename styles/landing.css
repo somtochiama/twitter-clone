@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 :root {
-	--blue-color: #1da1f2;
+    --blue-color: #1da1f2;
 }
 
 body, html {
-	margin: 0;
-	padding:0;
+    margin: 0;
+    padding:0;
     font-family: 'Lato', sans-serif;
 } 
 
@@ -15,31 +15,32 @@ body, html {
 }
 
 .container {
-	height: 93vh;
-	display: grid;
-	grid-template-columns: 1fr;
+    height: 93vh;
+    display: grid;
+    grid-template-columns: 1fr;
     width: 50%;
 }
 .container .left-box {
-	background: var(--blue-color);
-	grid-column:1/2;
-	display: flex;
-	justify-content:center;
-	align-items:center;
+    background:linear-gradient(
+        rgba(0,150,250,0.8),rgba(0,150,250,0.8)),
+         url(Twitter_Bird.svg) left;
+    grid-column:1/2;
+    display: flex;
+    justify-content:center;
+    align-items:center;
 }
 
-
 .container .left-box ul li {
-	list-style: none;
-	margin: 50px;
-	line-height: 24px;
-	font-size: 18px;
-	color: white;
+    list-style: none;
+    margin: 50px;
+    line-height: 24px;
+    font-size: 18px;
+    color: white;
 }
 
 .container .left-box ul li .icon {
-	font-size: 30px;
-	margin-right: 10px;
+    font-size: 30px;
+    margin-right: 10px;
 }
 
 .right-box{
@@ -71,6 +72,8 @@ body, html {
     font-weight: bolder;
 }
 
+
+
 .sign-in-container h2{
     font-size: 1.8em;
     font-weight: bolder;
@@ -99,6 +102,7 @@ body, html {
 
 .sign-up-btn:hover{
     background-color: royalblue;
+    cursor:pointer;
 }
 
 .log-in-btn{
@@ -117,7 +121,8 @@ body, html {
 }
 
 .log-in-btn:hover, .logo button:hover{
-    background-color: rgba(29,161,242, 0.08)
+    background-color: rgba(29,161,242, 0.08);
+    cursor:pointer;
 }
 
 footer{
@@ -136,18 +141,6 @@ footer ul li{
     color: #bcb8c2;
     font-size: 0.75em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer ul li:hover {
+    cursor: pointer;
+};
