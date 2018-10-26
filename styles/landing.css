@@ -103,6 +103,7 @@ body, html {
 
 .sign-up-btn:hover{
     background-color: royalblue;
+    cursor: pointer;
 }
 
 .log-in-btn{
@@ -121,7 +122,8 @@ body, html {
 }
 
 .log-in-btn:hover, .logo button:hover{
-    background-color: rgba(29,161,242, 0.08)
+    background-color: rgba(29,161,242, 0.08);
+    cursor: pointer;
 }
 
 footer{
