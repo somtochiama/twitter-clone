@@ -22,8 +22,8 @@ body, html {
 }
 .container .left-box {
 	background:linear-gradient(
-		rgba(0,150,250,0.8),rgba(0,150,250,0.8)
-		), url(Twitter_Bird.svg) left;
+        rgba(0,150,250,0.8),rgba(0,150,250,0.8)),
+         url(Twitter_Bird.svg) left;
 	grid-column:1/2;
 	display: flex;
 	justify-content:center;
